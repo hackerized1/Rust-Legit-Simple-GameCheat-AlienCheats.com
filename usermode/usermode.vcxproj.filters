@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="connect_driver">
+      <UniqueIdentifier>{74d8031c-9c9d-4c84-907e-988f65e48908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pattern">
+      <UniqueIdentifier>{dc87f9d5-6495-4619-a289-10b58015e2e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="driver.cpp">
+      <Filter>connect_driver</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sinmapper\drv_image.cpp" />
+    <ClCompile Include="sinmapper\vdm_ctx.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="mix\md5.cpp" />
+    <ClCompile Include="protect\protectmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="driver.h">
+      <Filter>connect_driver</Filter>
+    </ClInclude>
+    <ClInclude Include="include.h" />
+    <ClInclude Include="pattern.h">
+      <Filter>pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="math.h" />
+    <ClInclude Include="sinmapper\drv_image.hpp" />
+    <ClInclude Include="sinmapper\loadup.hpp" />
+    <ClInclude Include="sinmapper\nt.hpp" />
+    <ClInclude Include="sinmapper\raw_driver.hpp" />
+    <ClInclude Include="sinmapper\util.hpp" />
+    <ClInclude Include="sinmapper\vdm.hpp" />
+    <ClInclude Include="sinmapper\vdm_ctx.hpp" />
+    <ClInclude Include="skCrypt.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="mix\md5.h" />
+    <ClInclude Include="protect\anti_debugger.h" />
+    <ClInclude Include="protect\antidump.h" />
+    <ClInclude Include="protect\lazy.h" />
+    <ClInclude Include="protect\protectmain.h" />
+    <ClInclude Include="auth.hpp" />
+    <ClInclude Include="xorstr.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="library_x64.lib" />
+    <Library Include="libcurl.lib" />
+  </ItemGroup>
+</Project>
